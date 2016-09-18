@@ -2,7 +2,7 @@
 using System.Linq;
 using EmployeeBook.Data;
 
-namespace EmployeeBook.Site
+namespace EmployeeBook.Site.Pages
 {
     public partial class Default : System.Web.UI.Page
     {
