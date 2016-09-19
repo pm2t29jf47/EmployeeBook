@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-
-namespace EmployeeBook.Data
+﻿namespace EmployeeBook.Data
 {
     public class DataProvider : IDataProvider
     {
