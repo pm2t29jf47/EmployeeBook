@@ -77,6 +77,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ModelExtension\BusinessObjectException.cs" />
+    <Compile Include="ModelExtension\Employee.cs" />
+    <Compile Include="ModelExtension\Position.cs" />
     <Compile Include="Position.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

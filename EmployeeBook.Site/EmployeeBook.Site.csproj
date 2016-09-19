@@ -141,7 +141,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EmployeeBook.Data\EmployeeBook.Data.csproj">
       <Project>{5592441C-EBF8-47C5-A160-250930FFAEE8}</Project>

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
@@ -50,9 +51,9 @@ namespace EmployeeBook.Data
             Comment = "Документация, тз и тд"
         });
 
-        private Skill cPP;
+        private Skill cpp;
 
-        private Skill CPP => cPP ?? (cPP = new Skill
+        private Skill Cpp => cpp ?? (cpp = new Skill
         {
             Name = "C++",
             Comment = ""
@@ -113,26 +114,36 @@ namespace EmployeeBook.Data
         {
             using (var context = new EmployeeBookEntities())
             {
-                
+                context.Employees.Add(Ivan);
+                context.Employees.Add(Grigory);
+                context.Positions.Add(Junior);
+                context.Positions.Add(TechnicalWriter);
+                context.Positions.Add(Designer);
+                context.Skills.Add(Cpp);
+                context.Skills.Add(CSharp);
+                context.Skills.Add(CSharpBase);
+                context.Skills.Add(JavaBase);
+                context.Skills.Add(Xaml);
+                context.Skills.Add(Css);
+                context.Skills.Add(Javadoc);
+
+                Junior.AddSkill(Cpp);
+                Junior.AddSkill(CSharp);
+                Junior.AddSkill(CSharpBase);
+                Junior.AddSkill(JavaBase);
+
+                TechnicalWriter.AddSkill(CSharpBase);
+                TechnicalWriter.AddSkill(JavaBase);
+                TechnicalWriter.AddSkill(Javadoc);
+
+                Designer.AddSkill(Xaml);
+                Designer.AddSkill(Css);
+                Designer.AddSkill(JavaBase);
+
+                Ivan.AddPosition(Junior, DateTime.Now);
+                Ivan.AddPosition(TechnicalWriter, DateTime.Now);
+                Grigory.AddPosition(Designer, DateTime.Now);
             }
         }
-
-        
-            
-        
-            
-        
-
-        private static IEnumerable<Position> GeneratePositions()
-        {
-            return new List<Position>
-            {
-                new Position {Name = "Младший разработчик", Comment = "Комментарий"},
-                new Position {Name = "Технический писатель", Comment = "Документация, тз и тд"},
-                new Position {Name = "Дизайнер", Comment = ""}
-            };
-        }
-
-        
     }
 }
