@@ -1,0 +1,27 @@
+﻿.leftColumn {
+    float: left;
+    width: 30%;
+}
+
+.rightColumn {
+    margin-left: 30%;
+    width: 20%;
+    border: 1pt dashed black;
+    border-radius: 3px;
+}
+
+.rightColumn, .refreshDBSection {
+    height: 200px;
+    text-align: left;
+}
+
+.refreshDBButton {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+.cleared {
+  clear: both;
+}
