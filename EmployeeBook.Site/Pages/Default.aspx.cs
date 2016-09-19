@@ -8,11 +8,13 @@ namespace EmployeeBook.Site.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (var dbContext = new EmployeeBookEntities())
-            {
-                var a = dbContext.Employees.Count();
+            
+        }
 
-            }
+        protected void InsertDefaultDataButton_OnClick(object sender, EventArgs e)
+        {
+            var a = new DataProvider();
+            a.InsertExampleData();
         }
     }
 }
