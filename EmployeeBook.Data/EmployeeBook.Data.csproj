@@ -61,6 +61,7 @@
     <Compile Include="EmployeePositionSkill.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="ExampleDataGenerator.cs" />
     <Compile Include="IDataProvider.cs" />
     <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
