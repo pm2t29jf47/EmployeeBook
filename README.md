@@ -1,8 +1,6 @@
-#EmployeeBook#
+# Test project
 
-Test project
-
-### Products and Technology: ###
+Products and Technology:
 
 * ASP.NET 4.5 (C#, WebForms)
 * Entity Framework 6.0 (ORM, Database First)
